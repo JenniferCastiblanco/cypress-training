@@ -16,6 +16,7 @@ module.exports = {
     "cypress"
   ],
   'rules': {
+    "linebreak-style": ["error", "windows"],
     "quotes": ["error", "double"],
       "cypress/no-assigning-return-values": "error",
       "cypress/no-unnecessary-waiting": "error",

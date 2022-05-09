@@ -14,6 +14,5 @@ describe("Buy a t-shirt", () => {
     cy.get(".bankwire").click();
     cy.get("#cart_navigation > .button > span").click();
     cy.get(".cheque-indent > .dark").should("have.text", "Your order on My Store is complete.");
-    cy.screenshot("Buy a t-shirt");
   });
 });
