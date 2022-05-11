@@ -1,4 +1,4 @@
-class PaymentPage {
+class PaymentStepPage {
     private btnPaymentProceedToCheckout : string;
     private btnPayBankWire : string;
     private btnConfirmMyOrder : string;
@@ -19,4 +19,4 @@ class PaymentPage {
     }
 }
 
-export { PaymentPage }
+export { PaymentStepPage }

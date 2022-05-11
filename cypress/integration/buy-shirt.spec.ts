@@ -1,29 +1,29 @@
-import {MenuContentPage,ShopingCartPage, ProductListPage,SumaryPage,LoginPage,AddressSetpPage, ShippingStepsPage,PaymentPage} from "../page/index";
+import {MenuContentPage, ShoppingCartPage, ProductsListPage} from "../page/index";
+import {LoginPage, AddressStepPage, ShippingStepPage, PaymentStepPage} from "../page/index";
 
 const menuContentPage = new MenuContentPage();
-const shopingCartPage = new ShopingCartPage();
-const sumaryPage = new SumaryPage();
+const shoppingCartPage = new ShoppingCartPage();
 const loginPage = new LoginPage();
-const addressSetpPage = new AddressSetpPage();
-const shippingStepsPage = new ShippingStepsPage();
-const paymentPage = new PaymentPage();
-const productListPage = new ProductListPage();
+const addressSetpPage = new AddressStepPage();
+const shippingStepPage = new ShippingStepPage();
+const paymentStepPage = new PaymentStepPage();
+const productsListPage = new ProductsListPage();
 
 describe("Buy a t-shirt", () => {
   it("then the t-shirt should be bought", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
-    shopingCartPage.goToAddToCardPage();
-    productListPage.goToProdListProceedtoCheckout();
-    sumaryPage.goToSumaryProceedtoCheckout();
+    shoppingCartPage.goToAddToCardPage();
+    productsListPage.goToProdListProceedtoCheckout();
+    productsListPage.goToSummaryProceedtoCheckout();
     loginPage.goToEmailAddress();
     loginPage.goToPassword();
     loginPage.goToSumbitLogin();
     addressSetpPage.goToProceedCheckoutAddress();
-    shippingStepsPage.gotoTermsOfService();
-    shippingStepsPage.goToShippingProceedtoCheckout();
-    paymentPage.goToPayhBankWire();
-    paymentPage.goToPaymentProceedtoCheckout();
+    shippingStepPage.gotoTermsOfService();
+    shippingStepPage.goToShippingProceedtoCheckout();
+    paymentStepPage.goToPayhBankWire();
+    paymentStepPage.goToPaymentProceedtoCheckout();
     cy.get(".cheque-indent > .dark").should("have.text", "Your order on My Store is complete.");
   });
 });

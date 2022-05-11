@@ -1,4 +1,4 @@
-class ShopingCartPage {
+class ShoppingCartPage {
     private btnAddCard: string;
     
     constructor() {
@@ -11,4 +11,4 @@ class ShopingCartPage {
 
 }
 
-export { ShopingCartPage }
+export { ShoppingCartPage }

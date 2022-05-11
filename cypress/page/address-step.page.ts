@@ -1,4 +1,4 @@
-class AddressSetpPage {
+class AddressStepPage {
     private btnProceedCheckoutAddress : string;
  
 
@@ -10,4 +10,4 @@ class AddressSetpPage {
         cy.get(this.btnProceedCheckoutAddress).click();
     }
 }
-export { AddressSetpPage }
+export { AddressStepPage }

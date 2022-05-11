@@ -1,4 +1,4 @@
-class ShippingStepsPage {
+class ShippingStepPage {
     private btnShippingProceedToCheckout : string;
     private chekcTermsOfService : string;
 
@@ -15,4 +15,4 @@ class ShippingStepsPage {
     }
 }
 
-export { ShippingStepsPage }
+export { ShippingStepPage }
