@@ -16,8 +16,7 @@ describe("Buy a t-shirt", () => {
     shoppingCartPage.goToAddToCardPage();
     productsListPage.goToProdListProceedtoCheckout();
     productsListPage.goToSummaryProceedtoCheckout();
-    loginPage.goToEmailAddress();
-    loginPage.goToPassword();
+    loginPage.goToLogin();
     loginPage.goToSumbitLogin();
     addressSetpPage.goToProceedCheckoutAddress();
     shippingStepPage.gotoTermsOfService();

@@ -9,14 +9,11 @@ class LoginPage {
         this.btnSubmitLogin ="#SubmitLogin > span"
     }
 
-    public goToEmailAddress() : void{
+    public goToLogin (txtEmailAddress : string, txtPassword: string){
         cy.get(this.txtEmailAddress).type("aperdomobo@gmail.com");
-    }
-
-    public goToPassword() : void{
         cy.get(this.txtPassword).type("WorkshopProtractor");
     }
-
+    
     public goToSumbitLogin() : void{
         cy.get(this.btnSubmitLogin).click();
     }
